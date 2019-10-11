@@ -1,0 +1,378 @@
+/* GLOBAL */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  background-image: url("../../assets/images/bg03.jpg");
+}
+* {
+  box-sizing: border-box;
+}
+
+
+.box {
+  width: 1300px;
+  border: 1px solid transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* THE BLUE BAR */
+.site-header {
+  position: relative;
+  background-color: #0a275d;
+  width: 100%;
+}
+.site-header-btn {
+  float:right;
+}
+.site-header-btn a {
+  text-decoration: none;
+  border: 1px solid red;
+  padding: 4px 10px;
+  color: red;
+  font-weight: bold;
+  background-color: #fff;
+}
+.site-header-btn a:hover {
+  color: white;
+  background-color: #fdcb20;
+  background-color: black;
+  border: 1px solid #aaa;
+}
+.top {
+  display:inline;
+}
+.wrapper {
+  padding-left: 180px;
+  padding-right: 140px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+p.top {
+  position:relative;
+  top: -4px;
+  left: 13px;
+  font-size: 22px;
+  font-style: italic;
+  font-family: 'Arial Black', sans-serif;
+}
+
+
+
+
+
+
+/* THREE COLUMN LAYOUT */
+.row {
+  height:940px;
+  background-image: linear-gradient(#6a8da7, #0a275d);
+  float: left;
+  width: 100%;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+.left {
+  background-color: transparent;
+  width: 15%;
+}
+.middle {
+  margin-top: 25px;
+  padding-top: 40px;
+  background-color: #636363;
+  width: 62%;
+  border: 1px solid white;
+  height: 700px;
+  border-radius: 25px;
+  background-image: url("../../assets/images/dot02.png");
+  background-repeat: repeat;
+}
+.right {
+  background-color: transparent;
+  width: 23%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+/* NAV BUTTONS */
+.btn {
+  position: relative;
+  top: 50px;
+  left: 5px;
+}
+.button {
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  max-width: 100%;
+  transition-duration: 0.4s;
+  border-radius: 30%;
+}
+.button a:hover {
+  background-image: linear-gradient(#0a275d, #6a8da7, #0a275d);
+  color: #fff;
+}
+
+
+
+
+
+/* verse top
+.verse_container_top {
+  width: 530px;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 26px;
+  box-shadow: 10px 10px 7px #222;
+  background-image: linear-gradient(#6a8da7, #0a275d);
+}
+.verse_top {
+  width: 520px;
+  border: 1px solid #ffe9a2;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 4px;
+  background-color: #333;
+  font-size: 22px;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  color: #ffe9a2;
+}
+.verse_top a {
+  color: transparent;
+}
+.verse_top a:hover {
+  color: red;
+}
+.verse_top p {
+  font-style: normal;
+  font-size: 70%;
+  color: red;
+}
+.verse_top span {
+  font-size: 80%;
+  color: red;
+}
+.pdiv {
+  width: 350px;
+  border: 1px dashed #6a8da7;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
+
+
+/* new slideshow */
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide:nth-child(1) {
+  background: #D93B65;
+  background-image: url(../../assets/images/01.jpg);
+}
+
+.slide:nth-child(2) {
+  background: #037E8C;
+  background-image: url(../../assets/images/02.jpg);
+}
+
+.slide:nth-child(3) {
+  /*background: #36BF66;*/
+  background-image: url(../../assets/images/03.jpg);
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+  background-image: url(../../assets/images/04.jpg);
+}
+
+
+.slide-number {
+  position:relative;
+  top: 410px;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+.artistName {
+  width: 300px;
+  text-align: center;
+  background-color: #555;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.artistName a {
+  color: ddd;
+  text-decoration:none;
+}
+.artistName a:visited {
+  color: white;
+}
+.artistName a:hover {
+  color: white;
+}
+
+
+
+/* SLIDESHOW
+.slider_container_outside {
+  width: 310px;
+  height: auto;
+  border: 1px solid #ffe9a2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(#6a8da7, #0a275d);
+  box-shadow: 10px 10px 7px #222;
+}
+.slider_container {
+  width: 300px;
+  border: 1px solid white;
+  text-align: center;
+  margin: 4px;
+}
+*/
+
+
+/* artist
+.artist {
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+  background-color: black;
+  border: 2px solid #333;
+  margin: auto;
+  text-align: center;
+}
+.artist a {
+  color: #ccc;
+  text-decoration: none;
+}
+.artist a:hover {
+  color: white;
+}
+*/
+
+
+
+
+/* CLOCK */
+/* clock_container */
+.clock_container {
+  width: 240px;
+  height: auto;
+  border: 1px solid #ffe9a2;
+  border-radius: 25px;
+  background-image: linear-gradient(#6a8da7, #0a275d);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+/* clock */
+.clock {
+  text-align: center;
+  width: 228px;
+  margin: 4px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 4px;
+  background-color: #ffe9a2;
+  color: #000;
+  font-size: 150%;
+}
+
+
+
+
+/* WEATHER BOXES */
+.weatherbox {
+  width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.weather_grid {
+  width: 268px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(#0a275d, #6a8da7);
+  background-image: url("../../assets/images/bg03.jpg");
+}
+.weather_grid_left {
+  display:inline-block;
+  margin-left: 10px;
+  margin-right: 5px;
+  border: 1px solid transparent;
+  padding: 4px 5px 4px 4px;
+  background-color: #222;
+}
+.weather_grid_right {
+  display:inline-block;
+  margin-left: 5px;
+  margin-right: 10px;
+  border: 1px solid transparent;
+  padding: 4px 5px 4px 4px;
+  background-color: #222;
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  text-align: center;
+}
